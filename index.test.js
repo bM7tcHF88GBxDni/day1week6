@@ -1,7 +1,7 @@
 import {sum} from './index.js';
+ const actual = sum(4,2);
+ const expected = 6;
 
-if(sum(4,2) === 6){
-    console.log("it works")
-}else{
-    console.log("it's broken");
+if(actual !== expected){
+throw new Error(`${actual} was not equal to ${expected}`);
 }
